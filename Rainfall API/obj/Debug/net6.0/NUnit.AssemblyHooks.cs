@@ -3,30 +3,29 @@
 
 using System.CodeDom.Compiler;
 using System.Diagnostics;
-using global::NUnit.Framework;
-using global::TechTalk.SpecFlow;
 using global::System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
-[GeneratedCode("SpecFlow", "3.9.22")]
-[SetUpFixture]
-public class Rainfall_API_NUnitAssemblyHooks
+[assembly: NUnit.Framework.FixtureLifeCycle(NUnit.Framework.LifeCycle.InstancePerTestCase)]
+
+[GeneratedCode("Reqnroll", "2.2.1")]
+[global::NUnit.Framework.SetUpFixture]
+public static class Rainfall_API_NUnitAssemblyHooks
 {
-    [OneTimeSetUp]
+    [global::NUnit.Framework.OneTimeSetUp]
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public void AssemblyInitialize()
+    public static async Task AssemblyInitializeAsync()
     {
         var currentAssembly = typeof(Rainfall_API_NUnitAssemblyHooks).Assembly;
-
-        TestRunnerManager.OnTestRunStart(currentAssembly);
+        await global::Reqnroll.TestRunnerManager.OnTestRunStartAsync(currentAssembly);
     }
 
-    [OneTimeTearDown]
+    [global::NUnit.Framework.OneTimeTearDown]
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public void AssemblyCleanup()
+    public static async ValueTask AssemblyCleanupAsync()
     {
         var currentAssembly = typeof(Rainfall_API_NUnitAssemblyHooks).Assembly;
-
-        TestRunnerManager.OnTestRunEnd(currentAssembly);
+        await global::Reqnroll.TestRunnerManager.OnTestRunEndAsync(currentAssembly);
     }
 }
 #pragma warning restore

@@ -12,11 +12,30 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0"/>
-        <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57"/>
-        <PackageReference Include="SpecFlow.NUnit" Version="3.9.22"/>
-        <PackageReference Include="nunit" Version="3.13.2"/>
+        <PackageReference Include="Reqnroll" Version="2.2.1" />
+        <PackageReference Include="Reqnroll.Microsoft.Extensions.DependencyInjection" Version="2.2.1" />
+        <PackageReference Include="Reqnroll.NUnit" Version="2.2.1" />
+        <PackageReference Include="Reqnroll.SpecFlowCompatibility" Version="2.2.1" />
+        <PackageReference Include="Selenium.Support" Version="4.28.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="133.0.6943.5300" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.1.0"/>
         <PackageReference Include="FluentAssertions" Version="6.2.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <SpecFlowFeatureFiles Remove="Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Tests\**" />
     </ItemGroup>
 
 </Project>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/erickson/Automation/RiderProjects/Rainfall API/Rainfall API/Rainfall API.csproj": {}
+    "/Users/ericksonimanzi/RiderProjects/Rainfall-API/Rainfall API/Rainfall API.csproj": {}
   },
   "projects": {
-    "/Users/erickson/Automation/RiderProjects/Rainfall API/Rainfall API/Rainfall API.csproj": {
+    "/Users/ericksonimanzi/RiderProjects/Rainfall-API/Rainfall API/Rainfall API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/erickson/Automation/RiderProjects/Rainfall API/Rainfall API/Rainfall API.csproj",
+        "projectUniqueName": "/Users/ericksonimanzi/RiderProjects/Rainfall-API/Rainfall API/Rainfall API.csproj",
         "projectName": "Rainfall API",
-        "projectPath": "/Users/erickson/Automation/RiderProjects/Rainfall API/Rainfall API/Rainfall API.csproj",
-        "packagesPath": "/Users/erickson/.nuget/packages/",
-        "outputPath": "/Users/erickson/Automation/RiderProjects/Rainfall API/Rainfall API/obj/",
+        "projectPath": "/Users/ericksonimanzi/RiderProjects/Rainfall-API/Rainfall API/Rainfall API.csproj",
+        "packagesPath": "/Users/ericksonimanzi/.nuget/packages/",
+        "outputPath": "/Users/ericksonimanzi/RiderProjects/Rainfall-API/Rainfall API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/erickson/.nuget/NuGet/NuGet.Config"
+          "/Users/ericksonimanzi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -32,7 +32,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -50,17 +56,29 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
-            "SpecFlow.NUnit": {
+            "Reqnroll": {
               "target": "Package",
-              "version": "[3.9.22, )"
+              "version": "[2.2.1, )"
             },
-            "SpecFlow.Plus.LivingDocPlugin": {
+            "Reqnroll.Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[3.9.57, )"
+              "version": "[2.2.1, )"
             },
-            "nunit": {
+            "Reqnroll.NUnit": {
               "target": "Package",
-              "version": "[3.13.2, )"
+              "version": "[2.2.1, )"
+            },
+            "Reqnroll.SpecFlowCompatibility": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.28.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[133.0.6943.5300, )"
             }
           },
           "imports": [
@@ -74,12 +92,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

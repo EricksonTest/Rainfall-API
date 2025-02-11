@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rainfall API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a2259d2df19420c90f23262de65901d31cf405d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rainfall API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rainfall API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
